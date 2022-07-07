@@ -7,7 +7,7 @@ function Market() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://paper-trading-app.herokuapp.com//market`)
+            const response = await fetch(`https://paper-trading-app.herokuapp.com/market`)
             const responseJson = await response.json()
             setMarketData(responseJson)
             const quotes = (Object?.entries(responseJson))[0][1].result

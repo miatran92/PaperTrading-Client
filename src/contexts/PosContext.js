@@ -7,7 +7,7 @@ export function PositionProvider ({ children }){
 
     useEffect(() => {
         const fetchPositions = async () => {
-          const data = await fetch('https://paper-trading-app.herokuapp.com//positions')
+          const data = await fetch('https://paper-trading-app.herokuapp.com/positions')
           const dataJson = await data.json()
           const sortedData = dataJson.sort((a,b) => (b.qty*b.current_price)-(a.qty*a.current_price))
           setPos(sortedData)
