@@ -8,7 +8,7 @@ function News() {
     useEffect(() => {
         const fetchData = async () => {
             const symbol = input
-            const response = await fetch(`http://localhost:8000/news/${symbol}`)
+            const response = await fetch(`https://paper-trading-app.herokuapp.com/news/${symbol}`)
             const responseJson = await response.json()
             setNews(responseJson.news)
         }

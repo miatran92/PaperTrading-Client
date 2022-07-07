@@ -6,7 +6,7 @@ function OrderHistory() {
     
     useEffect(() => {
         const fetchData = async () => {
-           const data = await fetch(`http://localhost:8000/orders/orderhistory?status=${filtered}`)
+           const data = await fetch(`https://paper-trading-app.herokuapp.com/orders/orderhistory?status=${filtered}`)
                 .then(res => res.json())
                 .catch(err => console.log(err))
                 setOrderHistory(data)            

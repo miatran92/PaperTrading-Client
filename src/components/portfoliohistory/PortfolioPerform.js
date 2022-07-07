@@ -13,7 +13,7 @@ function PortfolioPerform() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch(`http://localhost:8000/performance?period=${period}`)
+      const data = await fetch(`https://paper-trading-app.herokuapp.com/performance?period=${period}`)
       .then(res => res.json())
       console.log(data)
       setYValues(data.equity)

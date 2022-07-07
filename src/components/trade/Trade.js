@@ -65,7 +65,7 @@ function Trade() {
             },
             body: JSON.stringify({symbol, qty, side, time_in_force, type, limit_price, stop_price})
         }
-          await fetch('http://localhost:8000/orders', options)
+          await fetch('https://paper-trading-app.herokuapp.com/orders', options)
                 .then(async (res) => {
                     if(!res.ok){
                         const text =  await res.json()

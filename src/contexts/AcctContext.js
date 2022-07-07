@@ -7,7 +7,7 @@ export function AcctProvider({children}){
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await fetch('http://localhost:8000/account')
+            const data = await fetch('https://paper-trading-app.herokuapp.com/account')
             const dataJson = await data.json()
             setAcctData(dataJson)
         }
