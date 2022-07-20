@@ -22,7 +22,7 @@ function App() {
             <Nav/>
               <Routes>
                 <Route path='/news' element={<News />}/>
-                  <Route exact path='/dashboard' element={ <Dashboard />}/>
+                  <Route exact path='/' element={ <Dashboard />}/>
                   <Route path='/positions' element={<Positions/>} />
                   <Route path='/trade' element={<Trade />} />
                   <Route path='/tradeconfirm' element={<TradeConfirm/>} />
