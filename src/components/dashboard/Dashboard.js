@@ -1,6 +1,6 @@
 import './Dashboard.css'
 import React, { useContext } from 'react'
-import Market from '../market/Market'
+// import Market from '../market/Market'
 import Positions from '../positions/Positions'
 import OrderHistory from '../orderhistory/OrderHistory'
 import AccountDetails from '../accountdetails/AccountDetails'
@@ -20,7 +20,7 @@ function Dashboard() {
           <DoughnutChart data={posChartData} options={options}/>
           <DoughnutChart data={acctChartData} options={options}/>
         </div>
-          <Market />
+          {/* <Market /> */}
         <div className='d-item'>
           <Positions/>
         </div>

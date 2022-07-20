@@ -61,7 +61,8 @@ function Trade() {
         const options = {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'authorization': localStorage.getItem("token"),
             },
             body: JSON.stringify({symbol, qty, side, time_in_force, type, limit_price, stop_price})
         }

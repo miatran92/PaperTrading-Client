@@ -1,11 +1,12 @@
 .nav{
     height: 70px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 9999;
     border-bottom: lightgrey solid 1px;
     background-color: antiquewhite;
+    margin-left: 0;
 }
 .nav-wrapper{
     width: 100vw;
@@ -20,6 +21,7 @@
     cursor: pointer;
 }
 .logo{
+    
     font-weight: 900;
     font-family: 'Raleway';
     z-index: 3;
@@ -75,6 +77,11 @@ a{
     transition: ease-out .5s;
 }
 @media (min-width: 600px) {
+    .nav-wrapper{
+        /* width: 100vw; */
+        position: absolute;
+        left: 0;
+    }
     .nav-right{
         display: none;
     }

@@ -31,7 +31,7 @@ function Nav() {
     <div ref={menuRef} className='nav'>
         <div className="nav-wrapper">
           <div className="nav-left">
-            <Link to='/'><span className='logo'>investopia</span></Link>
+            <Link to='/dashboard'><span className='logo'>investopia</span></Link>
             <span className='circle'></span>
           </div>
           <div className="nav-right">
@@ -40,7 +40,7 @@ function Nav() {
             : <FaBars onClick={handleClick}/>}
           </div>
           <div className={menuOpen ? "nav-menu active" : "nav-menu"}>
-            <Link to='/'><span className="menu-item" onClick={handleClick}>Dashboard <MdSpaceDashboard/></span></Link>
+            <Link to='/dashboard'><span className="menu-item" onClick={handleClick}>Dashboard <MdSpaceDashboard/></span></Link>
             <Link to='/performance'><span className="menu-item" onClick={handleClick}>Performance<GrDocumentPerformance/></span></Link>
             <Link to='/positions'><span className="menu-item" onClick={handleClick}>Positions<AiOutlineStock/></span></Link>
             <Link to='/orderhistory'><span className="menu-item" onClick={handleClick}>Order History<FiActivity/></span></Link>

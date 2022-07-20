@@ -12,22 +12,23 @@ import {PositionProvider} from './contexts/PosContext'
 import { AcctProvider } from './contexts/AcctContext';
 
 function App() {
+
   return (
     <div className="App">
       <PositionProvider>
         <AcctProvider>
         <BrowserRouter>
-          <Nav/>
           <div className="sections">
-            <Routes>
-                <Route path='/' element={<Dashboard/>}/>
-                <Route path='/positions' element={<Positions/>}/>
-                <Route path='/trade' element={<Trade />}/>
+            <Nav/>
+              <Routes>
                 <Route path='/news' element={<News />}/>
-                <Route path='/tradeconfirm' element={<TradeConfirm/>}/>
-                <Route path='/orderhistory' element={<OrderHistory/>}/>
-                <Route path='/performance' element={<PortfolioPerform />}/>
-            </Routes>
+                  <Route exact path='/dashboard' element={ <Dashboard />}/>
+                  <Route path='/positions' element={<Positions/>} />
+                  <Route path='/trade' element={<Trade />} />
+                  <Route path='/tradeconfirm' element={<TradeConfirm/>} />
+                  <Route path='/orderhistory' element={<OrderHistory/>} />
+                  <Route path='/performance' element={<PortfolioPerform />} />
+              </Routes>
           </div>
           </BrowserRouter>
           </AcctProvider>
