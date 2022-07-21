@@ -22,12 +22,12 @@ Paper Trading Dashboard giving quick access to account details and market news
 
 Users should be able to:
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
+- See portfolio overview 
+- View order history and filter based on conditions (all, opened or filled)
+- View portfolio performance
+- View current positions
+- Place different types of trade
+- Search for related news using an `input` field
 
 ### Screenshot
 
